@@ -1,8 +1,6 @@
 package task;
 
 import application.dto.WidgetDto;
-import org.apache.http.client.HttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import queryManager.QueriesManager;
@@ -14,7 +12,6 @@ public class WidgetTask implements Callable<String> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WidgetTask.class);
 
-    private static HttpClient client = new DefaultHttpClient();
     private List<WidgetDto> widgetDtoList;
     private String url;
 
